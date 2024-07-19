@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-image: url(../public/fundolistatreino.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 36px;
+  width: 620px;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.inputTask {
+  width: 340px;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius:8px;
+  background-color: #ffffffb2;
+  color: black;
+  outline: none;
+  font-weight: 600;
+}
+
+.inputTask:focus {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+}
+
+.input-search {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.input-button {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.btn-task {
+  width: 180px;
+  background-color: #cfcfcf;
+  border: 1px solid black;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 100ms;
+}
+
+.btn-task:hover {
+  background-color: #ffffff;
+}
+
+.tasklist {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  align-items: center;
+  background-color: #ffffff9a;
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.buttons-task {
+  border: 1px solid black;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.taskbuttons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.right {
+  background-color: #7fbc95;
+}
+
+.del {
+  background-color: rgb(224, 68, 68);
+}
+
+.tarefas-div {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-color {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.task.concluida {
+  background-color: #a521219a; /* Cor de fundo para tarefas concluídas */
+  text-decoration: line-through; /* Exemplo de estilização adicional */
+}
+
+
+@media (width < 600px) {
+  .container {
+    margin:20px auto;
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  .inputTask {
+    width: 140px;
+  }
+
+  .btn-task {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .task {
+    width: 250px;
+  }
+}
